@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.3**
+Wersja **1.9.4**
 
 ### Ideas
 
