@@ -12,9 +12,9 @@
             for usage in 4programmers.net
           </p>
           <p>
-            version: <b>1.3.14</b>,
-            <a href="../ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 09:53. 25.11.2021
+            version: <b>1.9.3</b>,
+            <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
+            last change: 21:57. 31.01.2022
           </p>
           <p>based on <a class="text-blue-700" href="https://codemirror.net/">CodeMirror</a> library.</p>
         </div>
@@ -24,8 +24,7 @@
           <v-editor ref="md" v-model="value"
                     placeholder="Kliknij, aby dodać treść..."
                     :autocompleteSource="autocompleteSource"
-                    :convert="toggled"
-                    @image="image"/>
+                    @state="state"/>
         </div>
         <div class="w-full md:w-1/2">
           <div class="mb-3 leading-6">
@@ -33,19 +32,7 @@
                  :title="button.title"
                  @click="command(button.name)"
                  v-for="button in buttons">
-              <i :class="button.icon"></i>
-            </div>
-          </div>
-          <div class="mb-6 leading-6 -ml-3">
-            <v-toggle-button v-model="toggled"></v-toggle-button>
-            Smart paste
-            <span v-if="toggled">(<kbd>Ctrl+V</kbd> wkleja zarówno linki i obrazki jako markdown)</span>
-            <span v-else>(<kbd>Ctrl+V</kbd> wkleja linki "as-is", jednak obrazki nadal jako markdown)</span>
-          </div>
-          <div :class="['flex', {'my-6': files.length}]">
-            <div v-for="[file, link] in files" style="max-width: 100px;max-height: 80px; margin-right: 10px">
-              <img :src="file" alt="uploaded image">
-              <span>{{ link }}</span>
+              <i :class="['transition-opacity', button.icon, button.can ? 'cursor-pointer' : 'opacity-40 cursor-default']"></i>
             </div>
           </div>
           <ul class="pl-3 space-y-4">
@@ -78,6 +65,7 @@
             </li>
             <li>
               <i class="fas fa-strikethrough mr-1"/> {{ c('Zacznij przekreślenie...', 'Przekreśl') }}
+              <i>(<kbd>Ctrl+S</kbd>, <b>s</b>trike)</i>
               <p class="text-xs pl-8">
                 Przekreśla zaznaczony tekst, lub wstawia znacznik przekreślenia,
                 jeśli nie ma zaznaczenia.</p>
@@ -90,7 +78,7 @@
                 zaznaczenie jest we fragmencie kodu, cytacie, nagłówku lub linku.
               </p>
             </li>
-            <li class="opacity-40">
+            <li>
               <i class="fas fa-quote-left mr-1"/> Zacznij cytat
               <div class="text-xs pl-8">
                 <p><b>&gt;</b> Żeby zacząć cytat, wpisz znak większości na początku paragrafu.</p>
@@ -98,7 +86,7 @@
                 <p><b>&gt;</b> wystarczy że zaczniesz nową linię.</p>
               </div>
             </li>
-            <li class="opacity-40">
+            <li>
               <i class="fas fa-list-ul mr-1"/> Zacznij listę wypunktowaną
               <div class="text-xs pl-8">
                 <p><b>-</b> Żeby zacząć listę wypunktowaną, wpisz myślnik na początku paragrafu.</p>
@@ -106,7 +94,7 @@
                 <p><b>-</b> wystarczy że zaczniesz nową linię.</p>
               </div>
             </li>
-            <li class="opacity-40">
+            <li>
               <i class="fas fa-list-ol mr-1"/> Zacznij listę numerowaną
               <div class="text-xs pl-8">
                 <p><b>1.</b> Żeby zacząć listę numerowaną, wpisz <b>1. </b> na początku paragrafu.</p>
@@ -114,7 +102,7 @@
                 <p><b>3.</b> wystarczy że zaczniesz nową linię.</p>
               </div>
             </li>
-            <li class="opacity-40">
+            <li>
               <i class="fas fa-code mr-1"/> Dodaj kod
               <div class="text-xs pl-8">
                 <p><b>```java</b></p>
@@ -126,17 +114,39 @@
           </ul>
           <h2 class="text-lg mt-6">Skróty</h2>
           <ul class="mt-4 pl-2 space-y-3">
+            <li><kbd>Ctrl+B</kbd> - dodanie <b>pogrubienia</b> lub <b>pogrubienie</b> zaznaczenia</li>
+            <li><kbd>Ctrl+I</kbd> - dodanie <i>pochylenia</i> lub <i>pochylenie</i> zaznaczenia</li>
+            <li><kbd>Ctrl+U</kbd> - dodanie <u>podkreślenie</u> lub <u>podkreślenie</u> zaznaczenia</li>
+            <li><kbd>Ctrl+S</kbd> - dodanie
+              <del>przekreślenia</del>
+              lub
+              <del>przekreślenie</del>
+              zaznaczenia
+            </li>
+            <li>
+              <kbd>Alt+K</kbd> - dodaje notację klawisza
+            </li>
+            <li>
+              <kbd>Ctrl+Space</kbd> - otwiera autocomplete wyboru języka
+            </li>
             <li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> - Dodaj wcięcie/usuń wcięcie</li>
             <li><kbd>Alt+Up</kbd>/<kbd>Alt+Down</kbd> - przesuń linię w górę lub w dół</li>
-            <li><kbd>Alt+L</kbd> - Zaznacz linię</li>
+            <li><kbd>Alt+L</kbd> - <span class="bg-blue-400 text-white">Zaznacz linię</span></li>
             <li>
-              <kbd>Ctrl+V</kbd> - "smart paste" lub "as-is" paste
+              <kbd>Ctrl+V</kbd> -
               <ul class="text-xs pl-4">
                 <li>Jeśli w schowku jest link do obrazka - wkleja obrazek</li>
-                <li>Jeśli w schowku jest inny link - wkleja link</li>
+                <li>Jeśli w schowku jest inny link - wkleja link dosłownie</li>
                 <li>Jeśli w schowku jest obrazek - uploaduje i wkleja obrazek</li>
                 <li>Jeśli nie, działa jak standardowe <b>Ctrl+V</b></li>
                 <li>Działa również z "Menu kontekstowe">"Wklej"</li>
+              </ul>
+            </li>
+            <li>
+              <kbd>Ctrl+Shift+V</kbd> -
+              <ul class="text-xs pl-4">
+                <li>Jeśli w schowku jest link - wkleja link jako markdown</li>
+                <li>Jeśli w schowku jest inny link - wkleja link dosłownie</li>
               </ul>
             </li>
           </ul>
@@ -150,114 +160,98 @@
 </template>
 
 <script>
-import logo from "../assets/4play.logo.png";
-import initialValue from "./initial.md";
-import ChangeLog from "../ChangeLog.md";
-import styles from "./style.module.scss";
+import logo from "./assets/resource/4play.logo.png";
+import initialValue from "./assets/source/initial.md";
+import changeLog from "../ChangeLog.md";
+import * as styles from "./style.module.scss";
 
 export default {
   data() {
     return {
       logo,
-      changeLog: ChangeLog,
-      toggled: true,
-      styles: styles,
-      autocompleteSource: text => Promise
-          .resolve([
-            {
-              name: 'somekind',
-              group: 'Moderator',
-              photo: 'https://4programmers.net/uploads/photo/TBOr7HZys3Rx6Jxb8wB6q8k0TlnA8iB99gX1OIC2.jpg'
-            },
-            {name: 'no_solution_found', photo: 'https://4programmers.net/uploads/photo/506ea76720067.jpg'},
-            {
-              name: 'TomRiddle',
-              group: 'Moderator Wiki',
-              photo: 'https://4programmers.net/uploads/photo/I2WnOOHo6bWzOyVM1yVm6j0PpFeN4P9L7W1Ggx1N.png'
-            },
-            {
-              name: 'Marooned',
-              group: 'Administrator',
-              photo: 'https://4programmers.net/uploads/photo/5f/5fc270f12af88.png'
-            },
-            {name: 'cerrato', group: 'Moderator', photo: 'https://4programmers.net/uploads/photo/5a/5a8ecfd189a33.jpg'},
-            {
-              name: 'Adam Boduch',
-              group: 'Administrator',
-              photo: 'https://4programmers.net/uploads/photo/585043b1ae0f6.jpg'
-            },
-            {name: 'Adam inny gostek'},
-            {name: 'AdamX'},
-            {name: 's.text'},
-            {name: 'Uśpiony wiosenny but', photo: 'https://4programmers.net/uploads/photo/5d/5d9b7971ab871.jpg'},
-          ])
-          .then(users => users.map(user => ({
-            name: user.name,
-            badge: user.group,
-            avatar: user.photo || 'https://4programmers.net/img/avatar.png',
-          }))),
-      files: [],
+      changeLog,
+      styles,
+      autocompleteSource: function (text) {
+        return fetch('https://thingproxy.freeboard.io/fetch/https://4programmers.net/completion/prompt/users?q=' + encodeURI(text))
+            .then(response => response.json())
+            .then(users => users.map(user => ({
+              name: user.name,
+              badge: user.group,
+              avatar: user.photo || 'https://4programmers.net/img/avatar.png',
+            })));
+      },
       value: initialValue,
       buttons: [
         {
           title: 'Pogrub zaznaczony tekst lub dodaj pogrubienie',
           icon: 'fas fa-bold',
-          name: 'bold'
+          name: 'bold',
+          can: null,
         },
         {
           title: 'Pochyl zaznaczony tekst lub dodaj pochylenie',
           icon: 'fas fa-italic',
-          name: 'italic'
+          name: 'italic',
+          can: null,
+        },
+        {
+          title: "Dodaj podkreślenie, lub podkreśl zaznaczony tekst",
+          name: "underline",
+          icon: "fas fa-underline",
+          can: null,
         },
         {
           title: "Dodaj przekreślenie, lub przekreśl zaznaczony tekst",
           name: "strikethrough",
           icon: "fas fa-strikethrough",
-        },
-        {
-          title: 'Dodaj cytat, lub cytuj zaznaczone linie (użyj drugi raz, żeby cofnąć cytowanie)',
-          name: 'quote',
-          icon: "fas fa-quote-left opacity-40 cursor-default",
-        },
-        {
-          title: "Zmień aktualną linię na listę wypunktowaną",
-          icon: "fas fa-list-ul opacity-40 cursor-default",
-          name: "bullist",
-        },
-        {
-          title: "Zmień aktualną linię na listę numerowaną",
-          icon: "fas fa-list-ol opacity-40 cursor-default",
-          name: "numlist",
-        },
-        {
-          title: 'Dodaj nagłówek, lub zmień zaznaczony tekst w nagłówek',
-          icon: "fas fa-heading opacity-40 cursor-default",
-          name: 'heading'
-        },
-        {
-          title: 'Dodaj fragment kodu, lub zmień zaznaczony tekst we fragment kodu',
-          icon: "fas fa-code opacity-40 cursor-default",
-          name: 'code',
+          can: null,
         },
         {
           title: 'Dodaj link',
-          icon: "fas fa-link opacity-40 cursor-default",
-          name: 'link'
-        }
+          icon: "fas fa-link",
+          name: 'link',
+          can: null,
+        },
+        {
+          title: 'Dodaj obraz',
+          icon: "fas fa-image",
+          name: 'image',
+          can: null,
+        },
+        {
+          title: 'Dodaj cytat',
+          name: 'quote',
+          icon: "fas fa-quote-left",
+          can: null,
+        },
+        {
+          title: "Zmień aktualną linię na listę wypunktowaną",
+          icon: "fas fa-list-ul",
+          name: "bulletList",
+          can: null,
+        },
+        {
+          title: "Zmień aktualną linię na listę numerowaną",
+          icon: "fas fa-list-ol",
+          name: "numericList",
+          can: null,
+        },
+        {
+          title: 'Dodaj fragment kodu, lub zmień zaznaczony tekst we fragment kodu',
+          icon: "fas fa-code",
+          name: 'code',
+          can: null,
+        },
+        {
+          title: 'Dodaj tabelkę kodu, lub zmień zaznaczony tekst w tabelkę',
+          icon: "fas fa-table",
+          name: 'table',
+          can: null,
+        },
       ]
     };
   },
   methods: {
-    image(file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        const newId = this.files.length + 1;
-        const newName = `screenshot${newId}.png`;
-        this.$refs.md.insertImage(newName, 'image alt');
-        this.files.push([reader.result, newName]);
-      };
-      reader.readAsDataURL(file);
-    },
     c(add, convert) {
       return add;
     },
@@ -269,9 +263,46 @@ export default {
       if (command === 'italic') {
         editor.makeItalics();
       }
+      if (command === 'underline') {
+        editor.makeUnderline();
+      }
       if (command === 'strikethrough') {
         editor.makeStrikeThrough();
       }
+      if (command === 'quote') {
+        editor.insertBlockQuote("Dodaj cytat...");
+      }
+      if (command === 'link') {
+        editor.makeLink("http://");
+      }
+      if (command === 'image') {
+        editor.makeImage("http://");
+      }
+      if (command === 'code') {
+        editor.insertCodeBlock();
+      }
+      if (command === 'bulletList') {
+        editor.addUnorderedList('Lista nieuporządkowana...');
+      }
+      if (command === 'numericList') {
+        editor.addOrderedList('Lista uporządkowana...');
+      }
+      if (command === 'table') {
+        editor.addTable('Nagłówek', 'Dodaj...');
+      }
+    },
+    state(state) {
+      this.buttons.find(b => b.name === 'bold').can = state.canBold;
+      this.buttons.find(b => b.name === 'italic').can = state.canItalics;
+      this.buttons.find(b => b.name === 'strikethrough').can = state.canStrikeThrough;
+      this.buttons.find(b => b.name === 'underline').can = state.canUnderline;
+      this.buttons.find(b => b.name === 'bulletList').can = state.canList;
+      this.buttons.find(b => b.name === 'numericList').can = state.canList;
+      this.buttons.find(b => b.name === 'quote').can = state.canBlockQuote;
+      this.buttons.find(b => b.name === 'link').can = state.canLink;
+      this.buttons.find(b => b.name === 'image').can = state.canImage;
+      this.buttons.find(b => b.name === 'code').can = state.canCode;
+      this.buttons.find(b => b.name === 'table').can = state.canTable;
     }
   },
 };

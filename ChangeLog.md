@@ -1,20 +1,79 @@
 ### Aktualna wersja
 
-Wersja **1.3.14**
+Wersja **1.9.3**
+
+### Ideas
+
+- Zrobienie by komenda do zmiany na notacje klawisza rozpoznawała klawisze nawet bez zaznaczenia
 
 ### ChangeLog
 
+- Dodanie komendy do zmiany zaznaczenia na notacje klawiszy
+- Dodanie skrótu <kbd>Alt+C</kbd> która dodaje fragment kodu, ale nie otwiera podpowiadania oznaczników języka
+- Dodanie komendy do dodania wspomnienia użytkownika poniżej cytatu
+- Poprawiono, żeby autocomplete oznaczników języków nie pokazywało się we fragmencie kodu
+- Dodanie dwukropka po wspomnieniu użytkownika występuje tylko na początku linii
+- Poprawiono cytowanie, dodawane są dwie puste linie poniżej cytatu
+- Poprawiono skrót <kbd>Ctrl+B</kbd>, tak by edytor nie tracił focusa na Firefoxie
+- Poprawienie poprawienie integracji z przeglądarkami, tak że włączają sprawdzanie pisowni
+- Usunięto "smart paste". <kbd>Ctrl+V</kbd> działa domyślnie (<kbd>Ctrl+Shift+V</kbd> to jest dawny "smart paste")
+- Dodano skrót klawiszowy <kbd>Ctrl+Space</kbd>, który otwiera autocomplete
+- Dodano pustą pozycje przy autocomplete języków "Brak oznacznika"
+- Kliknięcie dwa razy <kbd>Enter</kbd> w cytatcie kończy cytat
+- Dodano `csharp` jako oznacznik języka, na prośbę @obscurity
+- Poprawiono działanie komend dot. linków oraz obrazów, kiedy zaznaczenie styka się ze składnią
+- Poprawiono wklejanie placeholderów obraków i linków, tak by były dodawane w UrlEncode
+- Poprawiono formatowanie kodu, kiedy pisanie we wciętym kodzie zachowuje wcięcie
+- Dodatno komendę do wstawiania zapisu z klawiatury `<kbd>`
+- Poprawiono budowanie tabelek z niejednakową ilością komórek
+- Poprawiono komendę formatowania, kiedy była używa zaraz pod cytatem
+- Poprawiono bug z kodem, tabelkami i litsami kiedy zaznaczenie wykraczało poza nową linię
+- Poprawiono komendę listy, tak że zaznaczenie whitespace'a również dodaje placeholder
+- Poprawiono buga, kiedy dodawnie obrazka lub linka bezpośrednio pod cytatem uszkadzało składnię
+- Dodano skrót <kbd>Ctrl+U</kbd> dla podkreślenia
+- Dodano skrót <kbd>Ctrl+S</kbd> dla przekreślenia
+- Poprawiono dodawanie formatowania, kiedy zaznaczenie kończy się nową linią
+- Dodano komendę do dodania tabelki
+- Poprawiono żeby quote nie wypierdalał białych znaków
+- Dodano komendę do konwertowania zaznaczenia do listy
+- Dodano komendę do dodawania listy uporządkowanej
+- Dodano komendę do dodawania listy nieuporządkowanej
+- Dodano komendę do dodawania fragmentów kodu
+- Poprawiono komendę do dodawania fragmentów kodu żeby działala w otoczeniu białych znakow
+- Poprawiono wklejanie linków kiedy zawierają spacje
+- Poprawionio formatowanie linków, kiedy łamią paragraf
+- Poprawionio formatowanie przekreślenia, kiedy łamie paragraf
+- Poprawionio formatowanie pochylenia, kiedy łamie paragraf
+- Poprawionio formatowanie pogrubienia, kiedy łamie paragraf
+- Dodano komendę do dodania linku
+- Dodano komendę do dodania obrazka
+- Dodano komendę do podkreślania
+- Poprawiono formatowanie zaznaczenia jeśli ma białe znaki na początku lub końcu
+- Dodano funkcje nadawawania formatowania, nawet jeśli już jest inne formatowanie
+- Dodano funkcje do dodawania cytatu na koniec edytora, tak że domyka kod
+- Poprawiono formtowanie cytatu, tak żeby działało z linkami
+- Dodano możliwość formatowania tekstu w cytacie
+- Dodano wklejanie cytatu blokowego
+- Dodano dekorację składni Coyote `[[Forum/Delphi]]`
+- Użyto `https://thingproxy.freeboard.io/` żeby załadować prawdziwy autocomplete użytkowników z 4programmers.net.
+- Usunięto kolorowanie składni bloków kodu, po konsultacji z [@Adam Boduch]
+- Wklejanie wielolinijkowego, wciętego kodu wstawia niewcięty kod
+- Wklejenie linka ze spacją, np `"http://google.com "`, wkleja go w markdown bez spacji.
+- Poprawiono buga ze znikajacym numerem listy, jeśli linia jest pusta, dzieki [@Silv]
+- Poprawiono buga z nieodznaczaniem się zaznaczenia na Windows, dzięki [@Silv]
+- Dodano formatowania `<sub>` oraz `<sup>`
+- Dodano fixa do dekoracji zagnieżdżonych tagów
+- Poprawiono Coyote'a żeby Ctrl+Z umiało cofnąć komendy
 - Od teraz <kbd>Esc</kbd> emituje event `onCancel`, by móc cancelować treść.
-- Od teraz <kbd>Ctrl+Enter</kbd> oraz <kbd>Meta+Enter</kbd> emitują event `onSubmit`, by móc wysłać formularz skrótem
-  klawiszowym.
+- Od teraz <kbd>Ctrl+Enter</kbd> oraz <kbd>Meta+Enter</kbd> emitują event `onSubmit`, by móc wysłać formularz skrótem klawiszowym.
 - Wydzielono cały edytor do JS'a, i dodano adapter Vue
 - Poprawiono wklejanie linków i obrazków, jeśli pochodzą z edytora Rich Text
 - Poprawiono budowanie linków i obrazków ze znakami specjalnymi
 - Poprawiono dodawanie linków przy znaczniku ``
 - Poprawiono budowanie linków które zawierają `[`, `]`, `(`, `)`, `\ `
 - Zrefaktorować akcje na `StateCommand` z CodeMirror
-- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale
-  nie zostaje dodany do widoku.
+- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale nie zostaje dodany
+  do widoku.
 - Dodano testy jednostkowe dla akcji formatowania pochylenia
 - Dodano testy jednostkowe dla akcji formatowania pogrubienia
 - Dodano dekorację dla pochyleniem z `<i></i>`
@@ -35,10 +94,10 @@ Wersja **1.3.14**
 - Dodano testy jednostkowe dla widoku - linki
 - Dodano testy jednostkowe dla widoku - typografia
 - Pooprawiono parsowanie nicków z kropką
-- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś,
-  trzymając shift), konwertuje zaznaczenie na link.
-- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę
-  zamiast zaakceptować użytkownika.
+- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś, trzymając shift),
+  konwertuje zaznaczenie na link.
+- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę zamiast zaakceptować
+  użytkownika.
 - Usunięto dialekty SQLowe (MySQL, MSSQL, SQLite, Postgres) - przez **[@Panczo]**
 - Poprawiono zachowanie edytora kiedy użytkownik ma pusty schowek, a i tak kliknie <kbd>Ctrl+V</kbd>
 - "Smart paste" działa również dla RTS (żeby np dało się wklejać linki z Gmail/PhpStorm)
@@ -55,8 +114,7 @@ Wersja **1.3.14**
 - Poprawiono podpowiadanie nicków zawierających znaki `#`, `@` oraz `_`.
 - Poprawiono akcje "pogrub", "pochyl", "wkej link" oraz "wklej obrazek", tak by działały również w komórkach tabelki.
 - Dodano czcionkę monospace dla tabelek w edytorze
-- Przywrócono część Github-Flavoured Markdown (przywrócono ~~strikethrough~~ oraz tabelki; emoji i taski nadal są
-  usunięte).
+- Przywrócono część Github-Flavoured Markdown (przywrócono ~~strikethrough~~ oraz tabelki; emoji i taski nadal są usunięte).
 - Dodano kolorowanie składni dla Pascala
 - Dodano kolorowanie składni dla Ruby
 - Dodano autcomplete dla języków programowania we fragmentach kodu w markdown
@@ -91,12 +149,10 @@ Wersja **1.3.14**
 - Dodano powiększanie zaznaczenia; jak w IDE od JetBrains (<kbd>Ctrl+W</kbd>, expand selection)
 - Dodano lazy-loading języków (tzn. język zostanie załadowany dopiero jak zostanie użyty w treści)
 - Dodano jednolity theme dla wszystkich języków (np. keyword zawsze będzie miał taki sam kolor).
-- Dodano kolorowanie składni dla wielu języków (extension CodeMirror), głównie żeby **[@furious_programming]** przestał
-  męczyć.
+- Dodano kolorowanie składni dla wielu języków (extension CodeMirror), głównie żeby **[@furious_programming]** przestał męczyć.
 - Poprawiono buga z wykrywaniem blokow kodu podczas wycinania i wklejania.
 - Poprawiono buga z zaznaczeniem, które "zostawało" w tyle
-- Wciśnięcie Enter będąc w liście, automatycznie dodaje nowy element. Działa dla uporządkowanych i nieuporządkowanych
-  list
+- Wciśnięcie Enter będąc w liście, automatycznie dodaje nowy element. Działa dla uporządkowanych i nieuporządkowanych list
 - Dodano debugger elementów markdownu (JSON z typami wartości)
 - Dodano kolorowanie składni
 - Poprawiono wykrywanie fragmentów kodu inline oraz block
@@ -107,6 +163,8 @@ Wersja **1.3.14**
 - Poprawiono błędne wklejanie linku
 - Dodatko skróty klawiszowe do funkcji
 - Poprawiono błędne wklejanie obrazka
+
+[@Adam Boduch]: https://4programmers.net/Profile/1
 
 [@no_solution_found]: https://4programmers.net/Profile/23850
 

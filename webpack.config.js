@@ -30,11 +30,11 @@ const rules = [
   },
   {
     test: /\.png$/,
-    loader: 'file-loader',
+    type: 'asset/resource',
   },
   {
     test: /initial.md$/,
-    loader: 'raw-loader',
+    type: 'asset/source',
   },
   {
     test: /ChangeLog.md$/,
@@ -56,7 +56,7 @@ const plugins = [
     chunkFilename: '[id].css'
   }),
   new VueLoaderPlugin(),
-  new CopyWebpackPlugin(["ChangeLog.md"]),
+  new CopyWebpackPlugin({patterns: ["ChangeLog.md"]}),
 ];
 
 module.exports = {
