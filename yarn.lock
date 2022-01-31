@@ -1118,6 +1118,13 @@
   dependencies:
     "@lezer/common" "^0.15.0"
 
+"@lezer/markdown@0.15.4":
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/@lezer/markdown/-/markdown-0.15.4.tgz#079eec44f64c34c899d3f0ad9d84596c52f22837"
+  integrity sha512-lJ/zzm8j8H4h3rVzUG2/z3mtOLjeiXIV/kosxVYB+RmJS8dpS1QLUx9p8/F3/HU6bivzmFO3lii97/VDtmKMXA==
+  dependencies:
+    "@lezer/common" "^0.15.0"
+
 "@lezer/markdown@^0.15.0":
   version "0.15.3"
   resolved "https://registry.yarnpkg.com/@lezer/markdown/-/markdown-0.15.3.tgz#82140b73bd801911f70f04a491c514a12ecbcd1c"
@@ -1146,10 +1153,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@riddled/4play@1.9.4":
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.4.tgz#546750b11fd092bfcff9af39b7c82c53a09e834d"
-  integrity sha512-GsIy9hsLsVjxzoJi9heIZX48kI7/pUrCl9CqKdnv64MPM1EHo6USjDCoHiTACTgjP1+j5h0FmW0tEmBL2SoYgA==
+"@riddled/4play@1.9.6":
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.6.tgz#8bbd2de6143dff3bcfd542aafe61ed5bfb2afdbd"
+  integrity sha512-SVEkU0CH6d/csudY0lX7Han6E6HjXMebAhdECwvFRn9IcH+B2S2dFVKjsIr6pabrLj4QOnoTCnSnb/LmRJcOeQ==
   dependencies:
     "@codemirror/autocomplete" "^0.19.0"
     "@codemirror/commands" "^0.19.0"
@@ -1160,6 +1167,7 @@
     "@codemirror/rangeset" "^0.19.0"
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"
+    "@lezer/markdown" "0.15.4"
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"

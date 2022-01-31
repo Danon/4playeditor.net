@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.4**
+Wersja **1.9.6**
 
 ### Ideas
 
@@ -8,6 +8,8 @@ Wersja **1.9.4**
 
 ### ChangeLog
 
+- Zaktualizowano parser markdownu, tak że biblioteka działa na przeglądarkach które nie wspierają Ecma2018
+- Poprawienie dekoracji wspomnienia użytkownika z cyframi
 - Dodanie komendy do zmiany zaznaczenia na notacje klawiszy
 - Dodanie skrótu <kbd>Alt+C</kbd> która dodaje fragment kodu, ale nie otwiera podpowiadania oznaczników języka
 - Dodanie komendy do dodania wspomnienia użytkownika poniżej cytatu
