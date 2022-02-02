@@ -127,6 +127,9 @@
               <kbd>Alt+K</kbd> - dodaje notację klawisza
             </li>
             <li>
+              <kbd>Alt+C</kbd> - dodaje fragment kodu blokowego bez oznacznika języka
+            </li>
+            <li>
               <kbd>Ctrl+Space</kbd> - otwiera autocomplete wyboru języka
             </li>
             <li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> - Dodaj wcięcie/usuń wcięcie</li>
