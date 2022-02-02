@@ -1,8 +1,8 @@
 ### Aktualna wersja
 
-Wersja **1.9.6**
+Wersja **1.9.7**
 
-### Ideas
+### In progress
 
 - Zrobienie by komenda do zmiany na notacje klawisza rozpoznawała klawisze nawet bez zaznaczenia
 

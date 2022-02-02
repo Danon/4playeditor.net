@@ -1153,10 +1153,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@riddled/4play@1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.6.tgz#8bbd2de6143dff3bcfd542aafe61ed5bfb2afdbd"
-  integrity sha512-SVEkU0CH6d/csudY0lX7Han6E6HjXMebAhdECwvFRn9IcH+B2S2dFVKjsIr6pabrLj4QOnoTCnSnb/LmRJcOeQ==
+"@riddled/4play@1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.7.tgz#0121aa0c621b5f33bcbdbde4d206c8d93be28b41"
+  integrity sha512-J4zuH7/GHRDwq1tZEODkGUNhU1nnRhIP/GWmO9fHWM+rMjcD9Zmop7yT1Nwm62KLbiD0BecoLN0fHetbo3IYFA==
   dependencies:
     "@codemirror/autocomplete" "^0.19.0"
     "@codemirror/commands" "^0.19.0"
