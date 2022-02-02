@@ -139,7 +139,6 @@
               <kbd>Ctrl+V</kbd> -
               <ul class="text-xs pl-4">
                 <li>Jeśli w schowku jest link do obrazka - wkleja obrazek</li>
-                <li>Jeśli w schowku jest inny link - wkleja link dosłownie</li>
                 <li>Jeśli w schowku jest obrazek - uploaduje i wkleja obrazek</li>
                 <li>Jeśli nie, działa jak standardowe <b>Ctrl+V</b></li>
                 <li>Działa również z "Menu kontekstowe">"Wklej"</li>
@@ -149,7 +148,7 @@
               <kbd>Ctrl+Shift+V</kbd> -
               <ul class="text-xs pl-4">
                 <li>Jeśli w schowku jest link - wkleja link jako markdown</li>
-                <li>Jeśli w schowku jest inny link - wkleja link dosłownie</li>
+                <li>Jeśli w schowku jest cokolwiek innego - wkleja tekst dosłownie</li>
               </ul>
             </li>
           </ul>
