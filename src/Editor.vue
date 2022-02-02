@@ -53,6 +53,9 @@ export default {
     makeImage(placeholder) {
       this.editor.putImage(placeholder);
     },
+    insertKey(key) {
+      this.editor.putKey(key);
+    },
     insertBlockQuote(placeholder) {
       this.editor.putBlockQuote(placeholder);
     },

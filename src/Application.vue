@@ -221,6 +221,12 @@ export default {
           can: null,
         },
         {
+          title: 'Dodaj klawisz',
+          icon: 'fas fa-keyboard',
+          name: 'key',
+          can: true
+        },
+        {
           title: 'Dodaj cytat',
           name: 'quote',
           icon: "fas fa-quote-left",
@@ -280,6 +286,9 @@ export default {
       if (command === 'image') {
         editor.makeImage("http://");
       }
+      if (command === 'key') {
+        editor.insertKey('Ctrl');
+      }
       if (command === 'code') {
         editor.insertCodeBlock();
       }
@@ -305,6 +314,7 @@ export default {
       this.buttons.find(b => b.name === 'image').can = state.canImage;
       this.buttons.find(b => b.name === 'code').can = state.canCode;
       this.buttons.find(b => b.name === 'table').can = state.canTable;
+      this.buttons.find(b => b.name === 'key').can = state.canKey;
     }
   },
 };
