@@ -1,0 +1,150 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.module.scss ***!
+  \****************************************************************************************************************/
+.changeLog h2, .changeLog h3 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.changeLog p {
+  margin-bottom: 1em;
+}
+.changeLog ul {
+  padding-left: 1.6em;
+  margin-bottom: 1em;
+  list-style: disc;
+}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@riddled/4play/src/style.scss ***!
+  \*************************************************************************************************************************************/
+.cm-editor .cm-line {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  padding: 0 1rem;
+}
+.cm-editor .highlight-code {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #f2f2f2;
+}
+.cm-editor .highlight-table {
+  font-family: "JetBrains Mono", monospace;
+}
+.cm-editor .highlight-table > * {
+  letter-spacing: normal;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  border-right: none;
+  border-left: none;
+}
+.cm-editor .highlight-table ~ .highlight-sub,
+.cm-editor .highlight-table ~ .highlight-super {
+  font-size: 100%;
+  position: static;
+}
+.cm-editor .highlight-table ~ .highlight-sub *,
+.cm-editor .highlight-table ~ .highlight-super * {
+  font-size: 100%;
+  position: static;
+}
+.cm-editor .highlight-quote {
+  background-color: #f7f7f7;
+}
+.cm-editor .highlight-underline {
+  text-decoration: underline;
+}
+.cm-editor .highlight-bold {
+  font-weight: bold;
+}
+.cm-editor .highlight-italics {
+  font-style: italic;
+}
+.cm-editor .highlight-sub,
+.cm-editor .highlight-super {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+.cm-editor .highlight-super {
+  top: -0.5em;
+}
+.cm-editor .highlight-sub {
+  bottom: -0.25em;
+}
+
+.cm-tooltip.cm-tooltip-autocomplete {
+  font-family: Arial, Verdana, Halvetica, sans-serif;
+  background-color: white;
+  border: 1px solid #cccccc80;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 6px 6px -4px;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption {
+  background-color: white;
+  padding: 5px 0 5px 5px;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption[aria-selected] {
+  background-color: #e9ecef;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption[aria-selected]:hover {
+  background-color: #dbdee1;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption:hover {
+  background-color: #fafafa;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption img {
+  display: inline-block;
+  object-fit: contain;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  vertical-align: bottom;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption .cm-autocompletion-capital {
+  border: 1px solid #cdcdcd;
+  background-color: #f1f1f1;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+  margin-right: 7px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption .cm-completionLabel {
+  font-family: inherit;
+  color: gray;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption .cm-completionLabel .cm-completionMatchedText {
+  color: gray;
+  font-weight: bold;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption.cm-completionCode .cm-completionLabel {
+  margin-right: 10px;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption.cm-completionCode .cm-completionDetail {
+  color: #afafaf;
+  margin-right: 8px;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption.cm-completionUser .cm-completionLabel {
+  margin-right: 27px;
+}
+.cm-tooltip.cm-tooltip-autocomplete ul li.cm-completionOption.cm-completionUser .cm-completionDetail {
+  background-color: #777;
+  color: white;
+  font-style: normal;
+  margin-right: 10px;
+  padding: 3px 7px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 5px;
+}
