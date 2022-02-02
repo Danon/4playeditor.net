@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.8**
+Wersja **1.9.7**
 
 ### In progress
 
@@ -8,9 +8,6 @@ Wersja **1.9.8**
 
 ### ChangeLog
 
-- Poprawiono autocomplete wspomnień użytkowników kiedy występują dwa po sobie w linii
-- Dodano skrót klawiszowy <kbd>Alt+ArrowRight</kbd> który dodaje wcięcie, tak samo jak <kbd>Tab</kbd>
-- Dodano skrót klawiszowy <kbd>Alt+ArrowLeft</kbd> który usuwa wcięcie, tak samo jak <kbd>Shift+Tab</kbd>
 - Zaktualizowano parser markdownu, tak że biblioteka działa na przeglądarkach które nie wspierają Ecma2018
 - Poprawienie dekoracji wspomnienia użytkownika z cyframi
 - Dodanie komendy do zmiany zaznaczenia na notacje klawiszy
@@ -77,7 +74,8 @@ Wersja **1.9.8**
 - Poprawiono dodawanie linków przy znaczniku ``
 - Poprawiono budowanie linków które zawierają `[`, `]`, `(`, `)`, `\ `
 - Zrefaktorować akcje na `StateCommand` z CodeMirror
-- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale nie zostaje dodany do widoku.
+- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale nie zostaje dodany
+  do widoku.
 - Dodano testy jednostkowe dla akcji formatowania pochylenia
 - Dodano testy jednostkowe dla akcji formatowania pogrubienia
 - Dodano dekorację dla pochyleniem z `<i></i>`
@@ -98,8 +96,10 @@ Wersja **1.9.8**
 - Dodano testy jednostkowe dla widoku - linki
 - Dodano testy jednostkowe dla widoku - typografia
 - Pooprawiono parsowanie nicków z kropką
-- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś, trzymając shift), konwertuje zaznaczenie na link.
-- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę zamiast zaakceptować użytkownika.
+- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś, trzymając shift),
+  konwertuje zaznaczenie na link.
+- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę zamiast zaakceptować
+  użytkownika.
 - Usunięto dialekty SQLowe (MySQL, MSSQL, SQLite, Postgres) - przez **[@Panczo]**
 - Poprawiono zachowanie edytora kiedy użytkownik ma pusty schowek, a i tak kliknie <kbd>Ctrl+V</kbd>
 - "Smart paste" działa również dla RTS (żeby np dało się wklejać linki z Gmail/PhpStorm)
