@@ -2,30 +2,23 @@
 
 Witaj w demo nowego edytora!
 
-To krótkie demo prezentujące możliwości nowego edytora, który prawdopodobnie wkrótce będzie używany
-na [4programmers.net](https://4programmers.net).
+To krótkie demo prezentujące możliwości nowego edytora, który prawdopodobnie wkrótce będzie używany na [4programmers.net](https://4programmers.net).
 
-Edytor prezentuje nowatorski WYSWIG - dodaje formatowanie do markdownu, ale nigdy nie ukrywa żadnych znaków, więc zawsze widzisz, co
-wpisałeś.
+Edytor prezentuje nowatorski WYSWIG - dodaje formatowanie do markdownu, ale nigdy nie ukrywa żadnych znaków, więc zawsze widzisz, co wpisałeś.
 
 ### Typografia
 
-Edytor wspiera markdownowe **pogrubienie** tekstu, markdownowe *pochylenie* tekstu, oraz markdownowe ~~przekreślenie~~ tekstu (a'la
-Github-Flavoured Markdown). W Markdown, używanie znaku `_` podkreślnika jest równoważne z `*`, więc to jest __pogrubienie__, a to _
-pochylenie_.
+Edytor wspiera markdownowe **pogrubienie** tekstu, markdownowe *pochylenie* tekstu, oraz markdownowe ~~przekreślenie~~ tekstu (a'la Github-Flavoured Markdown). W Markdown, używanie znaku `_` podkreślnika jest równoważne z `*`, więc to jest __pogrubienie__, a to _pochylenie_.
 
 Wspierane jest również zagnieżdżenie *różnych **stylów ~~w ramach~~ jednego** napisu*.
 
-By podkreślić tekst w 4programmers.net, użyj HTML: <u>podkreślenie</u>. Wspierane jest również <b>pogrubienie</b> oraz <i>pochylenie</i>
-znacznikami HTML.
+By podkreślić tekst w 4programmers.net, użyj HTML: <u>podkreślenie</u>. Wspierane jest również <b>pogrubienie</b> oraz <i>pochylenie</i> znacznikami HTML.
 
-Edytor dekoruje również `inline code`, czyli krótkie kawałki tekstu, które mają reprezentować elementy języka programowania, np. "
-Dodaj `console.log(user)`". By umieścić znak "back-tick", użyj zapisu ``Zagnieżdżone użycie ` backticka ``.
+Edytor dekoruje również `inline code`, czyli krótkie kawałki tekstu, które mają reprezentować elementy języka programowania, np. "Dodaj `console.log(user)`". By umieścić znak "back-tick", użyj zapisu ``Zagnieżdżone użycie ` backticka ``.
 
 #### Listy zachowujące oraz nie zachowujące kolejności
 
-Edytor dodaje wsparcie dla list (również zanany jako wypunktowane i numerowane listy). Ustaw kursor przy dowolnym elemencie i wciśnij <kbd>
-Enter</kbd>:
+Edytor dodaje wsparcie dla list (również zanany jako wypunktowane i numerowane listy). Ustaw kursor przy dowolnym elemencie i wciśnij <kbd>Enter</kbd>:
 
 1. Pierwszy element
 2. Ustaw kursor na linii i kliknij enter:
@@ -53,16 +46,14 @@ Edytor dekoruje tabelki - wiersze, komórki oraz nagłówki. Dodaje również cz
 | --------------- | ----------- |
 | Albert Einstein | German      |
 
-Tableki również respektują style wewnątrz komórek, także z **pogrubieniem**, *pochyleniem*, `inline-code` oraz wszystkimi innymi *inline*
-elementami, takimi jak linki.
+Tableki również respektują style wewnątrz komórek, także z **pogrubieniem**, *pochyleniem*, `inline-code` oraz wszystkimi innymi *inline* elementami, takimi jak linki.
 
 | Algorithm       | Description            |
 | --------------- | ---------------------- |
 | **Quick** sort  | złożoność `O(n log n)` |
 | Bubble *sort*   | złożoność `O(n^2)`     |
 
-Tabelki jednak nie respektują blokowych elementów, więc nie można osadzić blokowego fragmentu kodu w tabelce. Obrazki nie są elementami
-blokowymi, więc można je umieszczać w tabelce.
+Tabelki jednak nie respektują blokowych elementów, więc nie można osadzić blokowego fragmentu kodu w tabelce. Obrazki nie są elementami blokowymi, więc można je umieszczać w tabelce.
 
 ### Przykłady kodu
 
@@ -85,8 +76,7 @@ CMD python /app/app.py
 
 #### Auto-uzupełnienie taga kodu
 
-Ustaw kursor za `js` i wciśnij <kbd>Backspace</kbd>, zobaczysz autocomplete, pomagający wybrać odpowiedni tag dla odpowiedniego języka
-programowania.
+Ustaw kursor za `js` i wciśnij <kbd>Backspace</kbd>, zobaczysz autocomplete, pomagający wybrać odpowiedni tag dla odpowiedniego języka programowania.
 
 ```js
 console.log("welcome");
@@ -96,11 +86,9 @@ Używając autocomplete, zmień `js` na `json` w przykładzie wyżej.
 
 ### Klawisze z klawiatury
 
-Edytor formatuje tag `<kbd></kbd>` jako kombinację klawiszy. Dekoracja `<kbd></kbd>` jest dodawana, kiedy wyrażony klawisz ma konkretną
-postać:
+Edytor formatuje tag `<kbd></kbd>` jako kombinację klawiszy. Dekoracja `<kbd></kbd>` jest dodawana, kiedy wyrażony klawisz ma konkretną postać:
 
-W ramach jednego skrótu oddziel klawisze plusem. Różne skróty oddziel od siebie przecinkiem. By dodać klawisz `+`, `,`lub `-` - użyj `Plus`
-, `Comma` lub `Minus`.
+W ramach jednego skrótu oddziel klawisze plusem. Różne skróty oddziel od siebie przecinkiem. By dodać klawisz `+`, `,`lub `-` - użyj `Plus`, `Comma` lub `Minus`.
 
 - Przewiń stronę w Chrome <kbd>PageDown</kbd>
 - Wyszukaj plik na Macu <kbd>Command+F6</kbd>
@@ -123,15 +111,13 @@ Można tworzyć klikalne przyciski, łącząc `[link]` oraz `<kbd>klawisz</kbd>`
 
 ### Wspomnienia innych użytkowników
 
-Edytor wspiera auto-uzupełnienie wspomnień użytkowników, do tego celu wstaw znak `@` oraz zacznij pisać nick użytkownika. Wspierane są
-również nazwy użytkowników zawierające spacje i kropki.
+Edytor wspiera auto-uzupełnienie wspomnień użytkowników, do tego celu wstaw znak `@` oraz zacznij pisać nick użytkownika. Wspierane są również nazwy użytkowników zawierające spacje i kropki.
 
 @someki @Ad @{To @{s.text}
 
 ### Specjalne linki Coyote
 
-Serwis 4programmers.net udostępnia krótką składnie dla zasobów wewnętrz strony, np. do forum lub kompendium. Takie linki nie są zgodne z
-Markdown i mają inną składnie, ale stanowią pewne ułatwienie wewnątrz samej strony.
+Serwis 4programmers.net udostępnia krótką składnie dla zasobów wewnętrz strony, np. do forum lub kompendium. Takie linki nie są zgodne z Markdown i mają inną składnie, ale stanowią pewne ułatwienie wewnątrz samej strony.
 
 - Link do kompendium: [[Python]]
 - Link do forum: [[Forum/Delphi]]
