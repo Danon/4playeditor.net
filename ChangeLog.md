@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.8**
+Wersja **1.9.10**
 
 ### In progress
 
@@ -8,6 +8,8 @@ Wersja **1.9.8**
 
 ### ChangeLog
 
+- Dodano znacznik `vb` do Visual Basic
+- Zmieniono skrót Alt+Up/Alt+Down na Cmd+] oraz Cmd+[ odnośnie wstawiania wcięć na Macu.
 - Poprawiono autocomplete wspomnień użytkowników kiedy występują dwa po sobie w linii
 - Dodano skrót klawiszowy <kbd>Alt+ArrowRight</kbd> który dodaje wcięcie, tak samo jak <kbd>Tab</kbd>
 - Dodano skrót klawiszowy <kbd>Alt+ArrowLeft</kbd> który usuwa wcięcie, tak samo jak <kbd>Shift+Tab</kbd>
