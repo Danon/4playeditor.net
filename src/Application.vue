@@ -12,7 +12,7 @@
             for usage in 4programmers.net
           </p>
           <p>
-            version: <b>1.9.8</b>,
+            version: <b>1.9.10</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
             last change: 23:34. 02.02.2022
           </p>
