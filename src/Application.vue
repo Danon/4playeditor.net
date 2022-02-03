@@ -167,6 +167,12 @@ import initialValue from "./assets/source/initial.md";
 import changeLog from "../ChangeLog.md";
 import * as styles from "./style.module.scss";
 
+function proxyFetch(input) {
+  return fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(input))
+      .then(response => response.json())
+      .then(response => JSON.parse(response.contents));
+}
+
 export default {
   data() {
     return {
@@ -174,8 +180,7 @@ export default {
       changeLog,
       styles,
       autocompleteSource: function (text) {
-        return fetch('https://thingproxy.freeboard.io/fetch/https://4programmers.net/completion/prompt/users?q=' + encodeURI(text))
-            .then(response => response.json())
+        return proxyFetch('https://4programmers.net/completion/prompt/users?q=' + encodeURI(text))
             .then(users => users.map(user => ({
               name: user.name,
               badge: user.group,
