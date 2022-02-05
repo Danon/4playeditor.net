@@ -988,10 +988,10 @@
     "@codemirror/view" "^0.19.0"
     "@lezer/javascript" "^0.15.1"
 
-"@codemirror/lang-markdown@0.19.5":
-  version "0.19.5"
-  resolved "https://registry.yarnpkg.com/@codemirror/lang-markdown/-/lang-markdown-0.19.5.tgz#4c5326391c4481f0c0c7cd1963a8065d6a26aa4a"
-  integrity sha512-CBc6UFhX+rqRs7axvO8yZZGorlTb5VP78YDmjIGIeQe+eNAoO5I48oNRwatz4hQXzbtYe1Cu4MskhVEhnMDOsg==
+"@codemirror/lang-markdown@0.19.6":
+  version "0.19.6"
+  resolved "https://registry.yarnpkg.com/@codemirror/lang-markdown/-/lang-markdown-0.19.6.tgz#761301d276fcfbdf88440f0333785efd71c2a4f5"
+  integrity sha512-ojoHeLgv1Rfu0GNGsU0bCtXAIp5dy4VKjndHScITQdlCkS/+SAIfuoeowEx+nMAQwTxI+/9fQZ3xdZVznGFYug==
   dependencies:
     "@codemirror/highlight" "^0.19.0"
     "@codemirror/lang-html" "^0.19.0"
@@ -1147,17 +1147,17 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@riddled/4play@1.9.10":
-  version "1.9.10"
-  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.10.tgz#69639062028f39bbb3eb754392f3568feeb51519"
-  integrity sha512-TQNE3LUF4mGyJVdcdeaUuGINbXxMdOwdl0riO+MOydK/1OLJQR7zWUmIuo9aTSZlel7Gv8cIpe7fINAjZ542Tg==
+"@riddled/4play@1.9.11":
+  version "1.9.11"
+  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.9.11.tgz#bc0200c55183ec6d5030e8e8c96d1c6b6025f066"
+  integrity sha512-LLwU+QFJb/K2EFgYmmLOepwgEuDZm5/bg7KAFxZDqDJJ6jlKyxqTYiLh3UQLKgbhHr99YtZOvUvVOpqTJUdlCw==
   dependencies:
     "@codemirror/autocomplete" "^0.19.0"
     "@codemirror/commands" "^0.19.0"
     "@codemirror/comment" "^0.19.0"
     "@codemirror/highlight" "^0.19.0"
     "@codemirror/history" "0.19.1"
-    "@codemirror/lang-markdown" "0.19.5"
+    "@codemirror/lang-markdown" "0.19.6"
     "@codemirror/rangeset" "^0.19.0"
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"

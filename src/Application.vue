@@ -12,9 +12,9 @@
             for usage in 4programmers.net
           </p>
           <p>
-            version: <b>1.9.10</b>,
+            version: <b>1.9.11</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 23:34. 02.02.2022
+            last change: 16:18. 05.02.2022
           </p>
           <p>based on <a class="text-blue-700" href="https://codemirror.net/">CodeMirror</a> library.</p>
         </div>
@@ -132,8 +132,10 @@
             <li>
               <kbd>Ctrl+Space</kbd> - otwiera autocomplete wyboru języka
             </li>
-            <li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> - Dodaj wcięcie/usuń wcięcie</li>
             <li><kbd>Alt+Up</kbd>/<kbd>Alt+Down</kbd> - przesuń linię w górę lub w dół</li>
+            <li><kbd>Alt+Right</kbd> lub <kbd>Alt+Left</kbd> - dodaj lub usuń wcięcie</li>
+            <li><kbd>Ctrl+[</kbd> lub <kbd>Ctrl+]</kbd> - dodaj lub usuń wcięcie (MacOS)</li>
+            <li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> - dodaj lub usuń wcięcie</li>
             <li><kbd>Alt+L</kbd> - <span class="bg-blue-400 text-white">Zaznacz linię</span></li>
             <li>
               <kbd>Ctrl+V</kbd> -
