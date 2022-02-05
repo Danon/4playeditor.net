@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.10**
+Wersja **1.9.11**
 
 ### In progress
 
@@ -8,6 +8,9 @@ Wersja **1.9.10**
 
 ### ChangeLog
 
+- Automatyczne usuwanie nadmiarowych wcięć ignoruje brakujące wcięcia w pierwszej linijce
+- Poprawiono buga, kiedy autocomplete pokazywał się w wielolinijkowym kodzie `` `inline` ``.
+- Poprawiono wspomaganie klawisza <kbd>Backspace</kbd> przy kasowaniu białych znaków w liście Markdown
 - Dodano znacznik `vb` do Visual Basic
 - Zmieniono skrót Alt+Up/Alt+Down na Cmd+] oraz Cmd+[ odnośnie wstawiania wcięć na Macu.
 - Poprawiono autocomplete wspomnień użytkowników kiedy występują dwa po sobie w linii
