@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.9.11**
+Wersja **1.10.0**
 
 ### In progress
 
@@ -8,6 +8,9 @@ Wersja **1.9.11**
 
 ### ChangeLog
 
+- Poprawiono wklejanie treści z zakończeniami linii CRLF
+- Poprawiono cytowanie treści z zakończeniami linii CRLF
+- Poprawiono edycję treści z zakończeniami linii CRLF
 - Automatyczne usuwanie nadmiarowych wcięć ignoruje brakujące wcięcia w pierwszej linijce
 - Poprawiono buga, kiedy autocomplete pokazywał się w wielolinijkowym kodzie `` `inline` ``.
 - Poprawiono wspomaganie klawisza <kbd>Backspace</kbd> przy kasowaniu białych znaków w liście Markdown
