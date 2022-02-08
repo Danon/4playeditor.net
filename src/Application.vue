@@ -12,9 +12,9 @@
             for usage in 4programmers.net
           </p>
           <p>
-            version: <b>1.10.1</b>,
+            version: <b>1.10.7</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 22:14. 06.02.2022
+            last change: 01:14. 07.02.2022
           </p>
           <p>based on <a class="text-blue-700" href="https://codemirror.net/">CodeMirror</a> library.</p>
         </div>
@@ -127,7 +127,7 @@
               <kbd>Alt+K</kbd> - dodaje notację klawisza
             </li>
             <li>
-              <kbd>Alt+C</kbd> - dodaje fragment kodu blokowego bez oznacznika języka
+              <kbd>Ctrl+Alt+C</kbd> - dodaje fragment kodu blokowego bez oznacznika języka
             </li>
             <li>
               <kbd>Ctrl+Space</kbd> - otwiera autocomplete wyboru języka

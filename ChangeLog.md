@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.1**
+Wersja **1.10.7**
 
 ### In progress
 
@@ -8,6 +8,8 @@ Wersja **1.10.1**
 
 ### ChangeLog
 
+- Dodano `index.d.ts`
+- Zmieniliśmy skrót <kbd>Alt+C</kbd> na <kbd>Ctrl+Alt+C</kbd>
 - Poprawiono wklejanie treści z zakończeniami linii CRLF
 - Poprawiono cytowanie treści z zakończeniami linii CRLF
 - Poprawiono edycję treści z zakończeniami linii CRLF
