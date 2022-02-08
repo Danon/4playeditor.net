@@ -266,6 +266,12 @@ export default {
       ]
     };
   },
+  mounted() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('content')) {
+      this.$refs.md.resetContent(params.get('content'));
+    }
+  },
   methods: {
     c(add, convert) {
       return add;
