@@ -35,6 +35,10 @@ export default {
   },
 
   methods: {
+    resetContent(content) {
+      this.editor.clear();
+      this.editor.view.dispatch(this.editor.view.state.replaceSelection(content));
+    },
     makeBold() {
       this.editor.putBold();
     },
