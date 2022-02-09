@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.7**
+Wersja **1.10.11**
 
 ### In progress
 
@@ -8,6 +8,8 @@ Wersja **1.10.7**
 
 ### ChangeLog
 
+- Wcisnięcie <kbd>Tab</kbd> będąc w notacji klawisza przenosi kursor na koniec znacznika
+- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Dodano `index.d.ts`
 - Zmieniliśmy skrót <kbd>Alt+C</kbd> na <kbd>Ctrl+Alt+C</kbd>
 - Poprawiono wklejanie treści z zakończeniami linii CRLF
