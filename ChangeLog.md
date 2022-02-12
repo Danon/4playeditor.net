@@ -1,13 +1,18 @@
 ### Aktualna wersja
 
-Wersja **1.10.7**
+Wersja **1.10.13**
 
 ### In progress
 
-- Zrobienie by komenda do zmiany na notacje klawisza rozpoznawała klawisze nawet bez zaznaczenia
+- Dodanie dedykowanej komendy do formatowania kodu `` `inline` ``.
 
 ### ChangeLog
 
+- Dodano dekorację dla horizontal rule, `<hr/>`
+- Dodanie dekoracji dla zaznaczenia, `<mark></mark>`
+- Wcisnięcie <kbd>Tab</kbd> będąc w notacji klawisza przenosi kursor na koniec znacznika
+- Zaznaczenie tekstu i wciśnięcie `(`, `[`, `{`, `'` lub `"` otacza zaznaczenie nawiasami/znakami
+- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Dodano `index.d.ts`
 - Zmieniliśmy skrót <kbd>Alt+C</kbd> na <kbd>Ctrl+Alt+C</kbd>
 - Poprawiono wklejanie treści z zakończeniami linii CRLF

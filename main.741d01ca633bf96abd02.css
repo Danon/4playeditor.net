@@ -74,6 +74,22 @@
 .cm-editor .highlight-sub {
   bottom: -0.25em;
 }
+.cm-editor .highlight-marked {
+  padding: 0.2rem 0.2rem;
+  border-radius: 2px;
+  font-size: 87.5%;
+  background-color: #282e32;
+}
+.cm-editor .highlight-marked, .cm-editor .highlight-marked * {
+  caret-color: white;
+  color: white;
+}
+.cm-editor .highlight-horizontal-rule:after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+}
 
 .cm-tooltip.cm-tooltip-autocomplete {
   font-family: Arial, Verdana, Halvetica, sans-serif;
