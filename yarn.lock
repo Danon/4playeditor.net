@@ -900,17 +900,6 @@
     "@codemirror/view" "^0.19.0"
     "@lezer/common" "^0.15.0"
 
-"@codemirror/closebrackets@^0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@codemirror/closebrackets/-/closebrackets-0.19.0.tgz#69fdcee85779d638a00a42becd9f53a33a26d77f"
-  integrity sha512-dFWX5OEVYWRNtGaifSbwIAlymnRRjxWMiMbffbAjF7p0zfGHDbdGkiT56q3Xud63h5/tQdSo5dK1iyNTzHz5vg==
-  dependencies:
-    "@codemirror/language" "^0.19.0"
-    "@codemirror/rangeset" "^0.19.0"
-    "@codemirror/state" "^0.19.0"
-    "@codemirror/text" "^0.19.0"
-    "@codemirror/view" "^0.19.0"
-
 "@codemirror/commands@^0.19.0":
   version "0.19.8"
   resolved "https://registry.yarnpkg.com/@codemirror/commands/-/commands-0.19.8.tgz#1f99c1a8bf200d17c4d6997379099459f3678107"
@@ -1158,13 +1147,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@riddled/4play@1.10.11":
-  version "1.10.11"
-  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.10.11.tgz#61e478884a9effc070827b76869d0781c0b2b61a"
-  integrity sha512-R1lH/VObet2m9mJpqMAPtWr0VQVwj46a7wlU/JrbEU2kvABnGZESNRHYj/K1OHmBnmwTq0ki+E40P5iWhawLPg==
+"@riddled/4play@1.10.13":
+  version "1.10.13"
+  resolved "https://registry.yarnpkg.com/@riddled/4play/-/4play-1.10.13.tgz#8a06972beba66f1acfe8f01b493d3af68b1b424a"
+  integrity sha512-9ODn1XVyC9XOnn1NP2KW81u1lrlq4fbknL1Xky5ulsCAj8vUgXGDZZ3uH0R5C0TvQ8OM+K13Ne8/lW/wez5Kvw==
   dependencies:
     "@codemirror/autocomplete" "^0.19.0"
-    "@codemirror/closebrackets" "^0.19.0"
     "@codemirror/commands" "^0.19.0"
     "@codemirror/comment" "^0.19.0"
     "@codemirror/highlight" "^0.19.0"
