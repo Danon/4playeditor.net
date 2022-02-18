@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.21**
+Wersja **1.10.22**
 
 ### In progress
 
