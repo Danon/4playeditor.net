@@ -24,6 +24,9 @@
   font-family: Arial, Verdana, Helvetica, sans-serif;
   padding: 0 1rem;
 }
+.cm-editor .cm-line.cm-activeLine {
+  background-color: transparent;
+}
 .cm-editor .highlight-code {
   font-family: "JetBrains Mono", monospace;
   background-color: #f2f2f2;
