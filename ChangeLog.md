@@ -1,15 +1,16 @@
 ### Aktualna wersja
 
-Wersja **1.10.18**
+Wersja **1.10.23**
 
 ### In progress
 
+- Wpisanie znaku `` ` `` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Zaznaczenie tekstu i wciśnięcie `(`, `[`, `{`, `'` lub `"` otacza zaznaczenie nawiasami/znakami
-- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Dodanie dedykowanej komendy do formatowania kodu `` `inline` ``
 
 ### ChangeLog
 
+- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Poprawiono działanie <kbd>Enter</kbd> oraz <kbd>Backspac</kbd> na mobilnej wersji
 - Dodano dekorację dla horizontal rule, `<hr/>`
 - Dodanie dekoracji dla zaznaczenia, `<mark></mark>`
