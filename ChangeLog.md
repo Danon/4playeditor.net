@@ -1,18 +1,19 @@
 ### Aktualna wersja
 
-Wersja **1.10.13**
+Wersja **1.10.17**
 
 ### In progress
 
-- Dodanie dedykowanej komendy do formatowania kodu `` `inline` ``.
+- Zaznaczenie tekstu i wciśnięcie `(`, `[`, `{`, `'` lub `"` otacza zaznaczenie nawiasami/znakami
+- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
+- Dodanie dedykowanej komendy do formatowania kodu `` `inline` ``
 
 ### ChangeLog
 
+- Poprawiono działanie <kbd>Enter</kbd> oraz <kbd>Backspac</kbd> na mobilnej wersji
 - Dodano dekorację dla horizontal rule, `<hr/>`
 - Dodanie dekoracji dla zaznaczenia, `<mark></mark>`
 - Wcisnięcie <kbd>Tab</kbd> będąc w notacji klawisza przenosi kursor na koniec znacznika
-- Zaznaczenie tekstu i wciśnięcie `(`, `[`, `{`, `'` lub `"` otacza zaznaczenie nawiasami/znakami
-- Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Dodano `index.d.ts`
 - Zmieniliśmy skrót <kbd>Alt+C</kbd> na <kbd>Ctrl+Alt+C</kbd>
 - Poprawiono wklejanie treści z zakończeniami linii CRLF

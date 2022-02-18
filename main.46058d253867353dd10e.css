@@ -84,9 +84,15 @@
   caret-color: white;
   color: white;
 }
+.cm-editor .highlight-horizontal-rule {
+  font-weight: bold;
+}
 .cm-editor .highlight-horizontal-rule:after {
   content: "";
   display: block;
+  position: relative;
+  z-index: -1;
+  bottom: 10px;
   width: 50%;
   border-bottom: 1px solid lightgray;
 }
