@@ -27,6 +27,13 @@
 .cm-editor .cm-line.cm-activeLine {
   background-color: inherit;
 }
+.cm-editor .cm-line.highlight-code {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #f2f2f2;
+}
+.cm-editor .cm-line.highlight-quote {
+  background-color: #f7f7f7;
+}
 .cm-editor .highlight-code {
   font-family: "JetBrains Mono", monospace;
   background-color: #f2f2f2;
@@ -51,9 +58,6 @@
 .cm-editor .highlight-table ~ .highlight-super * {
   font-size: 100%;
   position: static;
-}
-.cm-editor .highlight-quote {
-  background-color: #f7f7f7;
 }
 .cm-editor .highlight-underline {
   text-decoration: underline;
