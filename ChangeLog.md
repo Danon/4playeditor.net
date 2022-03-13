@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.26**
+Wersja **1.10.29**
 
 ### In progress
 
@@ -10,6 +10,8 @@ Wersja **1.10.26**
 
 ### ChangeLog
 
+- Poprawienie oznaczników języków w autocomplete fragmentów kodu
+- Użycie <kbd>Ctrl+Shift+V</kbd> wklei kod bez uwcześniejszych transformacji
 - Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Poprawiono działanie <kbd>Enter</kbd> oraz <kbd>Backspac</kbd> na mobilnej wersji
 - Dodano dekorację dla horizontal rule, `<hr/>`
