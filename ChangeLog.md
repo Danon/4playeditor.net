@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.29**
+Wersja **1.10.30**
 
 ### In progress
 
@@ -10,6 +10,8 @@ Wersja **1.10.29**
 
 ### ChangeLog
 
+- Dodano dekorację przekreślenia dla taga `<del>`.
+- Poprawiono działanie klawiszy przesuwania kursora w otoczeniu Markdownu
 - Poprawienie oznaczników języków w autocomplete fragmentów kodu
 - Użycie <kbd>Ctrl+Shift+V</kbd> wklei kod bez uwcześniejszych transformacji
 - Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
