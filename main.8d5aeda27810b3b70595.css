@@ -68,6 +68,9 @@
 .cm-editor .highlight-italics {
   font-style: italic;
 }
+.cm-editor .highlight-strike {
+  text-decoration: line-through;
+}
 .cm-editor .highlight-sub,
 .cm-editor .highlight-super {
   position: relative;
