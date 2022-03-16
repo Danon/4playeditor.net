@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.10.31**
+Wersja **1.11.0**
 
 ### In progress
 
@@ -10,6 +10,12 @@ Wersja **1.10.31**
 
 ### ChangeLog
 
+- Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem.
+- Poprawiono mieżenie wysokości tekstu jeśli podgląd obrazu jest niższy niż linia.
+- Poprawiono przechodzenie kursora dookoła podglądu
+- Poprawiono crash edytora, kiedy obraz był ostatnim znakiem tekstu
+- Poprawiono bug, kiedy przesuwanie obrazu Markdown podowało usunięcie ostatniego znaku
+- Dodano podgląd obrazu linków Markdown
 - Dodano dekorację przekreślenia dla taga `<del>`.
 - Poprawiono działanie klawiszy przesuwania kursora w otoczeniu Markdownu
 - Poprawienie oznaczników języków w autocomplete fragmentów kodu

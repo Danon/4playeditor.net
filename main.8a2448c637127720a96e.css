@@ -34,6 +34,13 @@
 .cm-editor .cm-line.highlight-quote {
   background-color: #f7f7f7;
 }
+.cm-editor .cm-line-image-preview {
+  padding: 0.5rem 1rem;
+}
+.cm-editor .cm-line-image-preview img {
+  max-width: 50%;
+  opacity: 0.6;
+}
 .cm-editor .highlight-code {
   font-family: "JetBrains Mono", monospace;
   background-color: #f2f2f2;
