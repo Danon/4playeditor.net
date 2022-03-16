@@ -10,8 +10,8 @@ Wersja **1.11.0**
 
 ### ChangeLog
 
-- Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem.
-- Poprawiono mieżenie wysokości tekstu jeśli podgląd obrazu jest niższy niż linia.
+- Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem obrazu.
+- Poprawiono mierzenie wysokości tekstu jeśli podgląd obrazu jest niższy niż linia.
 - Poprawiono przechodzenie kursora dookoła podglądu
 - Poprawiono crash edytora, kiedy obraz był ostatnim znakiem tekstu
 - Poprawiono bug, kiedy przesuwanie obrazu Markdown podowało usunięcie ostatniego znaku
