@@ -38,6 +38,12 @@ By dodać podtekst lub supertekst użyj tagów `<sub>` oraz `<sup>`:
 > > ##### [Silv napisał(a)](/Forum/1794731):
 > Dla równowagi opinii – ja nie widzę większej różnicy póki co. Tak samo chętnie zobaczę propozycję @TomRiddle.
 
+### Podgląd obrazów
+
+Dodanie obrazu markdown, korzystając ze składni ![image](https://4programmers.net/img/logo-mobile.png) pokaże podgląd obrazu poniżej paragrafu.
+
+Obrazy nie są elementem edytora, są jedynie dekoracją. Nie wchodzą w interakcę z myszą lub klawiaturą, nie stanowią też osobnej linii.
+
 ### Tabelki
 
 Edytor dekoruje tabelki - wiersze, komórki oraz nagłówki. Dodaje również czcionkę `monospace`, co pozwoli lepiej dostrzec jej kształt.

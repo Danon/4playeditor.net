@@ -12,9 +12,9 @@
             for usage in 4programmers.net
           </p>
           <p>
-            version: <b>1.10.31</b>,
+            version: <b>1.11.0</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 16:04. 15.03.2022
+            last change: 18:57. 16.03.2022
           </p>
           <p>based on <a class="text-blue-700" href="https://codemirror.net/">CodeMirror</a> library.</p>
         </div>
