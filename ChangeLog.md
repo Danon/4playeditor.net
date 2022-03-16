@@ -10,6 +10,7 @@ Wersja **1.11.0**
 
 ### ChangeLog
 
+- Poprawiono bug, kiedy została ucinana spacja zaraz po podglądzie obrazu.
 - Poprawiono niepoprawne wyświetlanie podglądu, kiedy wystąpiły dwa linki Markdown obok siebie.
 - Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem obrazu.
 - Poprawiono mierzenie wysokości tekstu jeśli podgląd obrazu jest niższy niż linia.
