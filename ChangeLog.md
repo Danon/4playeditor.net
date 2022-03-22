@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.11.0**
+Wersja **1.11.3**
 
 ### In progress
 
@@ -10,6 +10,7 @@ Wersja **1.11.0**
 
 ### ChangeLog
 
+- Dodano dekorację cytatu, tak by bardziej przypominała cytat z 4programmers.net
 - Poprawiono bug, kiedy została ucinana spacja zaraz po podglądzie obrazu.
 - Poprawiono niepoprawne wyświetlanie podglądu, kiedy wystąpiły dwa linki Markdown obok siebie.
 - Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem obrazu.
