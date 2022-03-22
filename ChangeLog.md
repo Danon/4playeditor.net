@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.11.3**
+Wersja **1.11.4**
 
 ### In progress
 
@@ -10,6 +10,7 @@ Wersja **1.11.3**
 
 ### ChangeLog
 
+- Poprawiono automatyczne wstawianie wielkich liter.
 - Dodano dekorację cytatu, tak by bardziej przypominała cytat z 4programmers.net
 - Poprawiono bug, kiedy została ucinana spacja zaraz po podglądzie obrazu.
 - Poprawiono niepoprawne wyświetlanie podglądu, kiedy wystąpiły dwa linki Markdown obok siebie.
