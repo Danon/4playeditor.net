@@ -1,15 +1,17 @@
 ### Aktualna wersja
 
-Wersja **1.11.4**
+Wersja **1.11.5**
 
 ### In progress
 
 - Wpisanie znaku `` ` `` automatycznie dodaje odpowiadający drugi znak za kursorem
 - Zaznaczenie tekstu i wciśnięcie `(`, `[`, `{`, `'` lub `"` otacza zaznaczenie nawiasami/znakami
 - Dodanie dedykowanej komendy do formatowania kodu `` `inline` ``
+- Dodanie <kbd>Shift+Ctrl+C</kbd> do elementu listy
 
 ### ChangeLog
 
+- Usunięto automatycznego usuwania wcięć wklejanych treści
 - Poprawiono automatyczne wstawianie wielkich liter.
 - Dodano dekorację cytatu, tak by bardziej przypominała cytat z 4programmers.net
 - Poprawiono bug, kiedy została ucinana spacja zaraz po podglądzie obrazu.
