@@ -31,14 +31,16 @@
   font-family: "JetBrains Mono", monospace;
   background-color: #f2f2f2;
 }
-.cm-editor .cm-line.highlight-quote {
+.cm-editor .cm-line.highlight-quote,
+.cm-editor .cm-line.highlight-quote + .cm-line-image-preview {
   color: #777;
   background-color: #f7f7f7;
   margin-left: 1rem;
   border-left: 4px solid #ddd;
   padding-left: 0.7rem;
 }
-.cm-editor .cm-line.highlight-quote .highlight-bold {
+.cm-editor .cm-line.highlight-quote .highlight-bold,
+.cm-editor .cm-line.highlight-quote + .cm-line-image-preview .highlight-bold {
   color: #555;
 }
 .cm-editor .cm-line-image-preview {
