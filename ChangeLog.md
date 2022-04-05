@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.11.5**
+Wersja **1.11.6**
 
 ### In progress
 
@@ -11,26 +11,27 @@ Wersja **1.11.5**
 
 ### ChangeLog
 
+- Poprawiono dekoracje obrazka osadzonego w cytacie
 - Usunięto automatycznego usuwania wcięć wklejanych treści
 - Poprawiono automatyczne wstawianie wielkich liter.
 - Dodano dekorację cytatu, tak by bardziej przypominała cytat z 4programmers.net
-- Poprawiono bug, kiedy została ucinana spacja zaraz po podglądzie obrazu.
+- Poprawiono bug, kiedy spacja była ucinana zaraz po podglądzie obrazu.
 - Poprawiono niepoprawne wyświetlanie podglądu, kiedy wystąpiły dwa linki Markdown obok siebie.
-- Poprawiono działnie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem obrazu.
-- Poprawiono mierzenie wysokości tekstu jeśli podgląd obrazu jest niższy niż linia.
+- Poprawiono działanie klawiszy <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> kiedy kursor był przed i za podglądem obrazu.
+- Poprawiono mierzenie wysokości tekstu, jeśli podgląd obrazu jest niższy niż linia.
 - Poprawiono przechodzenie kursora dookoła podglądu
 - Poprawiono crash edytora, kiedy obraz był ostatnim znakiem tekstu
-- Poprawiono bug, kiedy przesuwanie obrazu Markdown podowało usunięcie ostatniego znaku
+- Poprawiono bug, kiedy przesuwanie obrazu Markdown powodowało usunięcie ostatniego znaku
 - Dodano podgląd obrazu linków Markdown
-- Dodano dekorację przekreślenia dla taga `<del>`.
+- Dodano dekorację przekreślenia dla tagu `<del>`.
 - Poprawiono działanie klawiszy przesuwania kursora w otoczeniu Markdownu
 - Poprawienie oznaczników języków w autocomplete fragmentów kodu
-- Użycie <kbd>Ctrl+Shift+V</kbd> wklei kod bez uwcześniejszych transformacji
+- Użycie <kbd>Ctrl+Shift+V</kbd> wklei kod bez wcześniejszych transformacji
 - Wpisanie znaku `(`, `[`, `{`, `'` lub `"` automatycznie dodaje odpowiadający drugi znak za kursorem
-- Poprawiono działanie <kbd>Enter</kbd> oraz <kbd>Backspac</kbd> na mobilnej wersji
+- Poprawiono działanie <kbd>Enter</kbd> oraz <kbd>Backspace</kbd> na mobilnej wersji
 - Dodano dekorację dla horizontal rule, `<hr/>`
 - Dodanie dekoracji dla zaznaczenia, `<mark></mark>`
-- Wcisnięcie <kbd>Tab</kbd> będąc w notacji klawisza przenosi kursor na koniec znacznika
+- Wciśnięcie <kbd>Tab</kbd> będąc w notacji klawisza przenosi kursor na koniec znacznika
 - Dodano `index.d.ts`
 - Zmieniliśmy skrót <kbd>Alt+C</kbd> na <kbd>Ctrl+Alt+C</kbd>
 - Poprawiono wklejanie treści z zakończeniami linii CRLF
@@ -41,10 +42,10 @@ Wersja **1.11.5**
 - Poprawiono wspomaganie klawisza <kbd>Backspace</kbd> przy kasowaniu białych znaków w liście Markdown
 - Dodano znacznik `vb` do Visual Basic
 - Zmieniono skrót Alt+Up/Alt+Down na Cmd+] oraz Cmd+[ odnośnie wstawiania wcięć na Macu.
-- Poprawiono autocomplete wspomnień użytkowników kiedy występują dwa po sobie w linii
+- Poprawiono autocomplete wspomnień użytkowników, kiedy występują dwa po sobie w linii
 - Dodano skrót klawiszowy <kbd>Alt+ArrowRight</kbd> który dodaje wcięcie, tak samo jak <kbd>Tab</kbd>
 - Dodano skrót klawiszowy <kbd>Alt+ArrowLeft</kbd> który usuwa wcięcie, tak samo jak <kbd>Shift+Tab</kbd>
-- Zaktualizowano parser markdownu, tak że biblioteka działa na przeglądarkach które nie wspierają Ecma2018
+- Zaktualizowano parser markdownu, tak że biblioteka działa na przeglądarkach, które nie wspierają Ecma2018
 - Poprawienie dekoracji wspomnienia użytkownika z cyframi
 - Dodanie komendy do zmiany zaznaczenia na notacje klawiszy
 - Dodanie skrótu <kbd>Alt+C</kbd> która dodaje fragment kodu, ale nie otwiera podpowiadania oznaczników języka
@@ -53,43 +54,43 @@ Wersja **1.11.5**
 - Dodanie dwukropka po wspomnieniu użytkownika występuje tylko na początku linii
 - Poprawiono cytowanie, dodawane są dwie puste linie poniżej cytatu
 - Poprawiono skrót <kbd>Ctrl+B</kbd>, tak by edytor nie tracił focusa na Firefoxie
-- Poprawienie poprawienie integracji z przeglądarkami, tak że włączają sprawdzanie pisowni
+- Poprawienie integracji z przeglądarkami, tak że włączają sprawdzanie pisowni
 - Usunięto "smart paste". <kbd>Ctrl+V</kbd> działa domyślnie (<kbd>Ctrl+Shift+V</kbd> to jest dawny "smart paste")
 - Dodano skrót klawiszowy <kbd>Ctrl+Space</kbd>, który otwiera autocomplete
 - Dodano pustą pozycje przy autocomplete języków "Brak oznacznika"
-- Kliknięcie dwa razy <kbd>Enter</kbd> w cytatcie kończy cytat
+- Kliknięcie dwa razy <kbd>Enter</kbd> w cytacie kończy cytat
 - Dodano `csharp` jako oznacznik języka, na prośbę @obscurity
 - Poprawiono działanie komend dot. linków oraz obrazów, kiedy zaznaczenie styka się ze składnią
-- Poprawiono wklejanie placeholderów obraków i linków, tak by były dodawane w UrlEncode
+- Poprawiono wklejanie placeholderów obrazów i linków, tak by były dodawane w UrlEncode
 - Poprawiono formatowanie kodu, kiedy pisanie we wciętym kodzie zachowuje wcięcie
-- Dodatno komendę do wstawiania zapisu z klawiatury `<kbd>`
+- Dodano komendę do wstawiania zapisu z klawiatury `<kbd>`
 - Poprawiono budowanie tabelek z niejednakową ilością komórek
 - Poprawiono komendę formatowania, kiedy była używa zaraz pod cytatem
-- Poprawiono bug z kodem, tabelkami i litsami kiedy zaznaczenie wykraczało poza nową linię
+- Poprawiono bug z kodem, tabelkami i listami, kiedy zaznaczenie wykraczało poza nową linię
 - Poprawiono komendę listy, tak że zaznaczenie whitespace'a również dodaje placeholder
-- Poprawiono buga, kiedy dodawnie obrazka lub linka bezpośrednio pod cytatem uszkadzało składnię
+- Poprawiono buga, kiedy dodawanie obrazka lub linka bezpośrednio pod cytatem uszkadzało składnię
 - Dodano skrót <kbd>Ctrl+U</kbd> dla podkreślenia
 - Dodano skrót <kbd>Ctrl+S</kbd> dla przekreślenia
 - Poprawiono dodawanie formatowania, kiedy zaznaczenie kończy się nową linią
 - Dodano komendę do dodania tabelki
-- Poprawiono żeby quote nie wypierdalał białych znaków
+- Poprawiono, żeby quote nie wypierdalał białych znaków
 - Dodano komendę do konwertowania zaznaczenia do listy
 - Dodano komendę do dodawania listy uporządkowanej
 - Dodano komendę do dodawania listy nieuporządkowanej
 - Dodano komendę do dodawania fragmentów kodu
-- Poprawiono komendę do dodawania fragmentów kodu żeby działala w otoczeniu białych znakow
-- Poprawiono wklejanie linków kiedy zawierają spacje
-- Poprawionio formatowanie linków, kiedy łamią paragraf
-- Poprawionio formatowanie przekreślenia, kiedy łamie paragraf
-- Poprawionio formatowanie pochylenia, kiedy łamie paragraf
-- Poprawionio formatowanie pogrubienia, kiedy łamie paragraf
+- Poprawiono komendę do dodawania fragmentów kodu, żeby działała w otoczeniu białych znakow
+- Poprawiono wklejanie linków, kiedy zawierają spacje
+- Poprawiono formatowanie linków, kiedy łamią paragraf
+- Poprawiono formatowanie przekreślenia, kiedy łamie paragraf
+- Poprawiono formatowanie pochylenia, kiedy łamie paragraf
+- Poprawiono formatowanie pogrubienia, kiedy łamie paragraf
 - Dodano komendę do dodania linku
 - Dodano komendę do dodania obrazka
 - Dodano komendę do podkreślania
-- Poprawiono formatowanie zaznaczenia jeśli ma białe znaki na początku lub końcu
-- Dodano funkcje nadawawania formatowania, nawet jeśli już jest inne formatowanie
+- Poprawiono formatowanie zaznaczenia, jeśli ma białe znaki na początku lub końcu
+- Dodano funkcje nadawania formatowania, nawet jeśli już jest inne formatowanie
 - Dodano funkcje do dodawania cytatu na koniec edytora, tak że domyka kod
-- Poprawiono formtowanie cytatu, tak żeby działało z linkami
+- Poprawiono formatowanie cytatu, tak żeby działało z linkami
 - Dodano możliwość formatowania tekstu w cytacie
 - Dodano wklejanie cytatu blokowego
 - Dodano dekorację składni Coyote `[[Forum/Delphi]]`
@@ -101,25 +102,27 @@ Wersja **1.11.5**
 - Poprawiono buga z nieodznaczaniem się zaznaczenia na Windows, dzięki [@Silv]
 - Dodano formatowania `<sub>` oraz `<sup>`
 - Dodano fixa do dekoracji zagnieżdżonych tagów
-- Poprawiono Coyote'a żeby Ctrl+Z umiało cofnąć komendy
+- Poprawiono Coyote'a, żeby Ctrl+Z umiało cofnąć komendy
 - Od teraz <kbd>Esc</kbd> emituje event `onCancel`, by móc cancelować treść.
-- Od teraz <kbd>Ctrl+Enter</kbd> oraz <kbd>Meta+Enter</kbd> emitują event `onSubmit`, by móc wysłać formularz skrótem klawiszowym.
+- Od teraz <kbd>Ctrl+Enter</kbd> oraz <kbd>Meta+Enter</kbd> emitują event `onSubmit`, by móc wysłać formularz skrótem
+  klawiszowym.
 - Wydzielono cały edytor do JS'a, i dodano adapter Vue
 - Poprawiono wklejanie linków i obrazków, jeśli pochodzą z edytora Rich Text
 - Poprawiono budowanie linków i obrazków ze znakami specjalnymi
 - Poprawiono dodawanie linków przy znaczniku ``
 - Poprawiono budowanie linków które zawierają `[`, `]`, `(`, `)`, `\ `
 - Zrefaktorować akcje na `StateCommand` z CodeMirror
-- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale nie zostaje dodany do widoku.
+- Wcześniej, dodany obrazek się nie uploadował, jeśli wklejono go w nielegalne miejsce. Teraz obrazek się uploaduje, ale
+  nie zostaje dodany do widoku.
 - Dodano testy jednostkowe dla akcji formatowania pochylenia
 - Dodano testy jednostkowe dla akcji formatowania pogrubienia
-- Dodano dekorację dla pochyleniem z `<i></i>`
+- Dodano dekorację dla pochylenia z `<i></i>`
 - Dodano dekorację dla pogrubień z `<b></b>`
 - Dodano testy jednostkowe dla akcji kontynuacji cytatów
 - Przy liście numerowane (`1.`, `2.`) kliknięcie enter, dodaje kolejny element zwiększony o `1`.
 - Dodano testy jednostkowe dla akcji kontynuacji list
 - Dodano dekorację dla podkreśleń z `<u></u>`
-- Poprawiono buga że nie działało wklejanie obrazków z <kbd>Ctrl+Shift+V</kbd>
+- Poprawiono buga, że nie działało wklejanie obrazków z <kbd>Ctrl+Shift+V</kbd>
 - Upgrade `@codemirror/language` do `0.19.5`
 - Dodano testy jednostkowe dla widoku - wspomnienie użytkowników
 - Dodano testy jednostkowe dla widoku - fragmenty kodu
@@ -130,11 +133,13 @@ Wersja **1.11.5**
 - Dodano testy jednostkowe dla widoku - `<kbd>`
 - Dodano testy jednostkowe dla widoku - linki
 - Dodano testy jednostkowe dla widoku - typografia
-- Pooprawiono parsowanie nicków z kropką
-- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś, trzymając shift), konwertuje zaznaczenie na link.
-- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę zamiast zaakceptować użytkownika.
+- Poprawiono parsowanie nicków z kropką
+- Skrót <kbd>Ctrl+V</kbd> wkleja linki normalnie, jednak <kbd>Ctrl+Shift+V</kbd> (czy po prostu wklejenie czegoś,
+  trzymając shift), konwertuje zaznaczenie na link.
+- Poprawiono bug, kiedy klawisz <kbd>Enter</kbd> wcisnięty przy wspomnieniu użytkownika w liście, powiększał listę
+  zamiast zaakceptować użytkownika.
 - Usunięto dialekty SQLowe (MySQL, MSSQL, SQLite, Postgres) - przez **[@Panczo]**
-- Poprawiono zachowanie edytora kiedy użytkownik ma pusty schowek, a i tak kliknie <kbd>Ctrl+V</kbd>
+- Poprawiono zachowanie edytora, kiedy użytkownik ma pusty schowek, a i tak kliknie <kbd>Ctrl+V</kbd>
 - "Smart paste" działa również dla RTS (żeby np dało się wklejać linki z Gmail/PhpStorm)
 - Dodano kolorowanie składni dla Less i SCSS
 - Dodano kolorowanie składni dla SQLite
@@ -147,12 +152,13 @@ Wersja **1.11.5**
 - Dodano formatowanie wspomnień użytkowników.
 - Dodano tokenizację wspomnień użytkowników, teraz akcje na treści nie zmalformują tych elementów
 - Poprawiono podpowiadanie nicków zawierających znaki `#`, `@` oraz `_`.
-- Poprawiono akcje "pogrub", "pochyl", "wkej link" oraz "wklej obrazek", tak by działały również w komórkach tabelki.
+- Poprawiono akcje "pogrub", "pochyl", "wklej link" oraz "wklej obrazek", tak by działały również w komórkach tabelki.
 - Dodano czcionkę monospace dla tabelek w edytorze
-- Przywrócono część Github-Flavoured Markdown (przywrócono ~~strikethrough~~ oraz tabelki; emoji i taski nadal są usunięte).
+- Przywrócono część Github-Flavoured Markdown (przywrócono ~~strikethrough~~ oraz tabelki; emoji i taski nadal są
+  usunięte).
 - Dodano kolorowanie składni dla Pascala
 - Dodano kolorowanie składni dla Ruby
-- Dodano autcomplete dla języków programowania we fragmentach kodu w markdown
+- Dodano autocomplete dla języków programowania we fragmentach kodu w markdown
 - Dodano handling polskich znaków w nickach
 - Dodano placeholder taki sam jak na 4programmers.net
 - Dodano renderowanie customowych avatarów w autocomplete
@@ -184,10 +190,12 @@ Wersja **1.11.5**
 - Dodano powiększanie zaznaczenia; jak w IDE od JetBrains (<kbd>Ctrl+W</kbd>, expand selection)
 - Dodano lazy-loading języków (tzn. język zostanie załadowany dopiero jak zostanie użyty w treści)
 - Dodano jednolity theme dla wszystkich języków (np. keyword zawsze będzie miał taki sam kolor).
-- Dodano kolorowanie składni dla wielu języków (extension CodeMirror), głównie żeby **[@furious_programming]** przestał męczyć.
-- Poprawiono buga z wykrywaniem blokow kodu podczas wycinania i wklejania.
+- Dodano kolorowanie składni dla wielu języków (extension CodeMirror), głównie, żeby **[@furious_programming]** przestał
+  męczyć.
+- Poprawiono buga z wykrywaniem bloków kodu podczas wycinania i wklejania.
 - Poprawiono buga z zaznaczeniem, które "zostawało" w tyle
-- Wciśnięcie Enter będąc w liście, automatycznie dodaje nowy element. Działa dla uporządkowanych i nieuporządkowanych list
+- Wciśnięcie Enter będąc w liście, automatycznie dodaje nowy element. Działa dla uporządkowanych i nieuporządkowanych
+  list
 - Dodano debugger elementów markdownu (JSON z typami wartości)
 - Dodano kolorowanie składni
 - Poprawiono wykrywanie fragmentów kodu inline oraz block
@@ -196,7 +204,7 @@ Wersja **1.11.5**
 - Poprawiono wykrywanie kodu zarówno poprzez <b>```</b> jak i `~~~`
 - Edycja schematu kolorów, żeby pasowała do 4programmers.net
 - Poprawiono błędne wklejanie linku
-- Dodatko skróty klawiszowe do funkcji
+- Dodano skróty klawiszowe do funkcji
 - Poprawiono błędne wklejanie obrazka
 
 [@Adam Boduch]: https://4programmers.net/Profile/1
