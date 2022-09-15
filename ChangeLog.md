@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.11.6**
+Wersja **1.12.0**
 
 ### In progress
 
@@ -11,6 +11,8 @@ Wersja **1.11.6**
 
 ### ChangeLog
 
+- Formatowanie `<kbd>` akceptuje wszystkie znaki oprócz białych znaków
+- Poprawiono działanie automatycznego domykania znaków `"`, `'`, `)` oraz `]`
 - Poprawiono dekoracje obrazka osadzonego w cytacie
 - Usunięto automatycznego usuwania wcięć wklejanych treści
 - Poprawiono automatyczne wstawianie wielkich liter.
