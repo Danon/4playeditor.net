@@ -7,16 +7,13 @@
         </div>
         <div>
           <p>
-            Editor "4play" made by
-            <a href="https://4programmers.net/Profile/43956" class="text-blue-700">TomRiddle</a>
-            for usage in 4programmers.net
+            Editor "4play" made for usage in 4programmers.net by @Riddle.
           </p>
           <p>
-            version: <b>1.11.6</b>,
+            version: <b>1.12.0</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 21:21. 05.04.2022
+            last change: 21:04. 15.09.2022.
           </p>
-          <p>based on <a class="text-blue-700" href="https://codemirror.net/">CodeMirror</a> library.</p>
         </div>
       </div>
       <section class="md:flex text-sm mt-6 md:space-x-12">

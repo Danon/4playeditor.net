@@ -36,13 +36,13 @@ By dodać podtekst lub supertekst użyj tagów `<sub>` oraz `<sup>`:
 ### Cytat
 
 > > ##### [Silv napisał(a)](/Forum/1794731):
-> Dla równowagi opinii – ja nie widzę większej różnicy póki co. Tak samo chętnie zobaczę propozycję @TomRiddle.
+> Dla równowagi opinii – ja nie widzę większej różnicy. Tak samo chętnie zobaczę propozycję.
 
 ### Podgląd obrazów
 
 Dodanie obrazu markdown, korzystając ze składni ![image](https://4programmers.net/img/logo-mobile.png) pokaże podgląd obrazu poniżej paragrafu.
 
-Obrazy nie są elementem edytora, są jedynie dekoracją. Nie wchodzą w interakcę z myszą lub klawiaturą, nie stanowią też osobnej linii.
+Obrazy nie są elementem edytora, są jedynie dekoracją. Nie wchodzą w interakcję z myszą lub klawiaturą, nie stanowią też osobnej linii.
 
 ### Tabelki
 
@@ -92,23 +92,21 @@ Używając autocomplete, zmień `js` na `json` w przykładzie wyżej.
 
 ### Klawisze z klawiatury
 
-Edytor formatuje tag `<kbd></kbd>` jako kombinację klawiszy. Dekoracja `<kbd></kbd>` jest dodawana, kiedy wyrażony klawisz ma konkretną postać:
+Edytor formatuje tag `<kbd></kbd>` jako kombinację klawiszy. Dekoracja `<kbd></kbd>` jest dodawana kiedy wyrażony klawisz ma konkretną postać:
 
 W ramach jednego skrótu oddziel klawisze plusem. Różne skróty oddziel od siebie przecinkiem. By dodać klawisz `+`, `,`lub `-` - użyj `Plus`, `Comma` lub `Minus`.
 
 - Przewiń stronę w Chrome <kbd>PageDown</kbd>
 - Wyszukaj plik na Macu <kbd>Command+F6</kbd>
-- Zmień nazwę w Visual Studio <kbd>Ctrl+K,Ctrl+R</kbd> lub <kbd>Shift+PageDown+F6</kbd>
+- Zmień nazwę w Visual Studio <kbd>Ctrl+K,Ctrl+R</kbd> lub <kbd>Shift+F6</kbd>
 - Wprowadź polecenie w Vim <kbd>:</kbd>, potem wyjdź <kbd>Esc</kbd>, `":wq!"`, <kbd>Enter</kbd>
 - Do powiększenia obrazu użyj skrótu <kbd>Ctrl+Plus</kbd> lub <kbd>Ctrl+Minus</kbd>
+- <kbd>Ctrl+Ł</kbd> znak diaryktyczny
 - Skrót na Macu to <kbd>Ctrl+Comma</kbd>
 
 Niepoprawne klawisze zostaną zinterpretowane jak zwykły kod HTML. Znaki diaryktyczne, białe znaki oraz blokowe elementy nie są formatowane.
 
-- <kbd>Ctrl++</kbd> dwa separatory
-- <kbd>Ctrl+Ł</kbd> litery ze znakiem diakrytycznym
-- <kbd>foo</kbd> nieznany klawisz
-- <kbd >Shift</ kbd > inny format tagu
+- <kbd >Shift</ kbd > inny format taga
 - <kbd><kbd>Shift</kbd></kbd> - zewnętrzne tagi są nie są dekorowane
 
 Można tworzyć klikalne przyciski, łącząc `[link]` oraz `<kbd>klawisz</kbd>`
@@ -119,26 +117,26 @@ Można tworzyć klikalne przyciski, łącząc `[link]` oraz `<kbd>klawisz</kbd>`
 
 Edytor wspiera auto-uzupełnienie wspomnień użytkowników, do tego celu wstaw znak `@` oraz zacznij pisać nick użytkownika. Wspierane są również nazwy użytkowników zawierające spacje i kropki.
 
-@someki @Ad @{To @{s.text}
+@someki
+@Ad
+@{To
+@{s.text}
 
 ### Specjalne linki Coyote
 
-Serwis 4programmers.net udostępnia krótką składnie dla zasobów wewnętrz strony, np. do forum lub kompendium. Takie linki nie są zgodne z Markdown i mają inną składnie, ale stanowią pewne ułatwienie wewnątrz samej strony.
+Serwis 4programmers.net udostępnia krótką składnię dla zasobów wewnątrz strony, np. do forum lub kompendium. Takie linki nie są zgodne z Markdown i mają inną składnie, ale stanowią pewne ułatwienie wewnątrz samej strony.
 
 - Link do kompendium: [[Python]]
 - Link do forum: [[Forum/Delphi]]
 
 ### Wstawki HTML
 
-Edytor dekoruje również komentarze HTML.
+Edytor dekoruje większość elementów HTML.
 
-<!-- komentarz HTML -->
+Komentarze: <!-- comment -->
+Encje HTML: &nbsp; &gt;
 
-Kolorowane są też encje HTML:
-
-&nbsp; &gt;
-
-Kolorowane są też wszystkie tagi HTML, ponieważ HTML to poprawny Markdown:
+Tagi HTML, ponieważ HTML to poprawny Markdown:
 
 <div>
     <p>Paragraph</p>
