@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.12.0**
+Wersja **1.12.1**
 
 ### In progress
 
@@ -11,6 +11,7 @@ Wersja **1.12.0**
 
 ### ChangeLog
 
+- Poprawiono działanie automatycznego domykania znaków dla znaków Unicode
 - Formatowanie `<kbd>` akceptuje wszystkie znaki oprócz białych znaków
 - Poprawiono działanie automatycznego domykania znaków `"`, `'`, `)` oraz `]`
 - Poprawiono dekoracje obrazka osadzonego w cytacie
