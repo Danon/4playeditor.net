@@ -1,6 +1,6 @@
 ### Aktualna wersja
 
-Wersja **1.12.1**
+Wersja **1.12.2**
 
 ### In progress
 
@@ -11,6 +11,8 @@ Wersja **1.12.1**
 
 ### ChangeLog
 
+- Poprawiono dekorację `~~strike~~`, by była zgodna z CommonMark
+- Poprawiono skrót klawiszowy, ⌘+A do zaznaczenia całej treści
 - Poprawiono działanie automatycznego domykania znaków dla znaków Unicode
 - Formatowanie `<kbd>` akceptuje wszystkie znaki oprócz białych znaków
 - Poprawiono działanie automatycznego domykania znaków `"`, `'`, `)` oraz `]`
