@@ -10,9 +10,9 @@
             Editor "4play" made for usage in 4programmers.net by @Riddle.
           </p>
           <p>
-            version: <b>1.12.2</b>,
+            version: <b>1.12.3</b>,
             <a href="./ChangeLog.md" class="underline">/ChangeLog.md</a>,
-            last change: 21:04. 15.09.2022.
+            last change: 11:01. 24.09.2022.
           </p>
         </div>
       </div>
